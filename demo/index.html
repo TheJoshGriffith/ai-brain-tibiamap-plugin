@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tibia-map demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+  tibia-map { margin: 1rem 0 2rem; }
+</style>
+<script type="module" src="../src/tibia-map-element.js"></script>
+</head>
+<body>
+<h1>&lt;tibia-map&gt; demo</h1>
+
+<h2>Static map (Thais center)</h2>
+<tibia-map center="32369,32241,7" zoom="2" static></tibia-map>
+
+<h2>Markers (Rookgaard NPCs)</h2>
+<tibia-map center="32097,32207,7" zoom="3"
+  markers='[{"x":32097,"y":32207,"z":7,"label":"Obi (weapons)"},{"x":32093,"y":32222,"z":7,"label":"Dixi (armor)"},{"x":32073,"y":32161,"z":7,"label":"Al Dee (tools)"}]'>
+</tibia-map>
+
+<h2>Route (with floor change)</h2>
+<tibia-map center="32369,32241,7" zoom="2"
+  route='[{"x":32360,"y":32241,"z":7},{"x":32369,"y":32235,"z":7},{"x":32380,"y":32230,"z":7},{"x":32385,"y":32225,"z":6}]'>
+</tibia-map>
+</body>
+</html>
