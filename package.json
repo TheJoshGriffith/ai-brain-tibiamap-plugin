@@ -4,7 +4,7 @@
   "description": "Tibia map renderer: <tibia-map> web component, React wrapper, and AI Brain markdown fence plugin. Tiles by tibiamaps.io.",
   "type": "module",
   "license": "MIT",
-  "repository": "github:xtrmjosh/ai-brain-tibiamap-plugin",
+  "repository": "github:TheJoshGriffith/ai-brain-tibiamap-plugin",
   "exports": {
     ".": "./src/plugin.jsx",
     "./element": "./src/tibia-map-element.js",
