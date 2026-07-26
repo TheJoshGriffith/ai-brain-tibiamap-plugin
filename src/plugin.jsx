@@ -2,6 +2,7 @@
 
 import { parseTibiaMapBlock } from "./parse.js";
 import { TibiaMap } from "./react.jsx";
+import { isMapHref, MapLink } from "./map-link.jsx";
 
 /**
  * AI Brain markdown fence plugin.
@@ -30,6 +31,11 @@ function TibiaMapBlock({ code }) {
 const tibiaMapPlugin = {
   language: "tibiamap",
   Component: TibiaMapBlock,
+  /** Optional link handler: claims matching hrefs in rendered markdown. */
+  link: {
+    match: isMapHref,
+    Component: MapLink,
+  },
 };
 
 export default tibiaMapPlugin;
